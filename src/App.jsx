@@ -2,7 +2,6 @@
 // @flow
 
 import React, { Component } from 'react';
-
 import dummyData from './data/dummy.json';
 import Grid from './components/Grid';
 import logo from './node.svg';
