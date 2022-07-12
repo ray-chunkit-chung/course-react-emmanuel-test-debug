@@ -6,7 +6,8 @@ import Single from './Single';
 
 export default class Grid extends Component {
   renderList() {
-    return this.props.items.map((item) => (
+    const { items } = this.props;
+    return items.map((item) => (
       <Single key={item.id} item={item} />
     ));
   }
@@ -25,5 +26,5 @@ export default class Grid extends Component {
 }
 
 Grid.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf.isRequired,
 };

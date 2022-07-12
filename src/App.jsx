@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 // @flow
 
 import React, { Component } from 'react';
@@ -20,12 +21,6 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Hello world! React testing</h1>
         </header>
-        {/* <p className="App-intro">
-          local change.
-        </p>
-        <p className="App-intro">
-          All work and no play makes 0xjack a dull boy.
-        </p> */}
         <div>
           <Grid items={this.state.dummyData} />
         </div>

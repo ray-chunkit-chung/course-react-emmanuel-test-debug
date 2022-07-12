@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Single = ({ item }) => {
+function Single({ item }) {
   return (
     <li className="col l6 s12">
       <div className="card">
@@ -14,10 +14,10 @@ const Single = ({ item }) => {
       <br />
     </li>
   );
-};
+}
 
 Single.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.shape.isRequired,
 };
 
 export default Single;
